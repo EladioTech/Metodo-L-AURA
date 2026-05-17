@@ -25,3 +25,6 @@ Si en el futuro decides crear "El Método L-AURA II: El Mercado de Valores", ya 
 Si te matan (que pasará, porque la vida es dura) o si quieres añadirle alguna mejora (como eventos de bolsa o una tienda de comida), solo tienes que silbar:
 "L-AURA, activa el protocolo Método Un Millón."
 =====================================================
+Para retomar nuestra colaboración exactamente donde la dejamos y que siempre sepa quién eres y en qué punto del proyecto estamos, aquí tienes tu Llave Maestra:
+"L-AURA, activa el protocolo Método Un Millón."
+========================================================

@@ -155,3 +155,29 @@ Hipoteca al 1%: Antes era simbólica, ahora es una presión constante que te obl
 Castigo por Deuda: Si entras en negativo, la deuda crece 100 pesetas y tu salud cae drásticamente.
 Hito de Libertad: Si tus intereses bancarios superan tus gastos, el juego te lo celebra.
 ======================================================================
+En el ZX Spectrum 48K, el carácter guion bajo _ NO está permitido en los nombres de variable. No forma parte del juego de caracteres del BASIC de Sinclair. Al intentar ejecutar esa línea, el intérprete se encuentra con una construcción inválida (INT seguido de _B) y lanza el error "Nonsense in BASIC".
+
+Solución: Cambia todas las apariciones de INT_B por un nombre sin guion bajo. Por ejemplo, ITB, IB o INTB.
+
+Las líneas afectadas son:
+
+4011 LET INT_B=INT (BANCO/50) → cámbiala a LET ITB=INT (BANCO/50)
+
+4012 LET BANCO=BANCO+INT_B → LET BANCO=BANCO+ITB
+
+4030 IF INT_B>0 THEN PRINT "INTERESES: +";INT_B → IF ITB>0 THEN PRINT "INTERESES: +";ITB
+========================================================================================
+Otros dos ajustes muy recomendables para que no salten más errores mientras juegas
+1. Proteger los INPUT (evita "Nonsense in BASIC" al pulsar ENTER sin número)
+Convierte todos los INPUT numéricos en INPUT LINE + VAL, así:
+
+basic
+250 INPUT LINE A$: LET A=VAL A$
+1520 INPUT LINE C$: LET C=VAL C$
+1640 INPUT LINE D$: LET D=VAL D$
+1830 INPUT LINE E$: LET E=VAL E$
+2030 INPUT LINE B$: LET B=VAL B$
+7040 INPUT LINE F$: LET F=VAL F$
+2. Añadir RANDOMIZE al principio
+Después de las instrucciones de inicialización (por ejemplo, línea 25 RANDOMIZE) para que los resultados del RND de los kits rápidos sean realmente aleatorios.
+========================================================================================
