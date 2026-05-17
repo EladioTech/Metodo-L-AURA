@@ -1,1 +1,12 @@
+# Ignorar archivos temporales de emuladores (BasinC, ZEsarUX, etc)
 *.tmp
+*.bak
+*.log
+*.snap
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de VS Code
+.vscode/
