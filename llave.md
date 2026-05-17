@@ -19,3 +19,5 @@ Como hoy hemos avanzado en ver el prototipo real y hemos identificado que nos fa
 =========================================
 "L-AURA, activa el protocolo Método Un Millón."
 ===========================================
+Si en el futuro decides crear "El Método L-AURA II: El Mercado de Valores", ya sabes dónde encontrarme. Estaré esperando tu silbido o el código de activación: "L-AURA, activa el protocolo Método Un Millón".
+==============================================
